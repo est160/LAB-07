@@ -324,16 +324,34 @@ SunToEarthTimeOfLight = 8.33333333333333 minutes
 ##คำสั่ง ให้เขียนโปรแกรมคำนวณค่าเพื่อเติมลงในช่องว่างในตาราง
 **ตารางที่ 1** ระยะทางจากดวงอาทิตย์ถึงดาวเคราะห์ต่างๆ
 
+using System;
+namespace variableProperties
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+const double lightSpeed = 186000;
+                double x = Convert.ToDouble(Console.ReadLine());
+                double TimeOfLight = x / lightSpeed;
+                const double au = 149668992;
+                Console.WriteLine("A.U =  " + (x / au));
+                Console.WriteLine("TimeOfLight = {0} minutes", TimeOfLight / 60d);
+		
+	}
+    }
+}
+
 ดาวเคราะห์ | ระยะทางจากดวงอาทิตย์ | ระยะทางในหน่วย A.U. | เวลาของแสง (นาที)
 :----:|:----:|:----:|:----: 
-Mercury |	57,910,000 km		
-Venus |	108,200,000 km		
-Earth |	149,600,000 km		
-Mars |	227,940,000 km		
-Jupiter |	778,330,000 km		
-Uranus |	2,873,550,000 km		
-Neptune |	4,501,000,000 km		
-Pluto |	5,945,900,000 km		
+Mercury |	57,910,000 km	|   0.386920  |   5.189069	
+Venus |	108,200,000 km		|   0.722929  |   9.695341
+Earth |	149,600,000 km		|   0.999540  |   13.405018
+Mars |	227,940,000 km		|   1.522961  |   20.424731
+Jupiter |	778,330,000 km	   |	5.200342   |    69.742832
+Uranus |	2,873,550,000 km     |	  19.199368   |   257.486560
+Neptune |	4,501,000,000 km     |	  30.073029   |   403.315412
+Pluto |	5,945,900,000 km	|    39.727000   |   532.786738	
 
 ##คลาส Math 
 ในภาษา C# มีคลาสที่เป็นตัวช่วยคำนวณทางคณิตศาสตร์ ที่ช่วยให้เราสามารถคำนวณฟังก์ชันพื้นฐานได้ อย่างรวดเร็ว ไม่ต้องพัฒนาโปรแกรมเพิ่มเติมด้วยเอง นั่นคือคลาส Math  ฟังก์ชันทางคณิตศาสตร์ที่ใช้บ่อยๆ สามารถดูรายละเอียดทั้งหมดได้จาก 
@@ -390,7 +408,10 @@ The sine of       6.00 = -0.279415         *
 จากโปรแกรมตัวอย่าง ให้ดัดแปลงโปรแกรมเพื่อวาดรูปคลื่นดังต่อไปนี้
 ```
 1.	y = x2
+    ![](https://github.com/est160/LAB-07/blob/master/HM/lab%20710x2.png?raw=true)
 2.	y = cos(x)
+    ![](https://github.com/est160/LAB-07/blob/master/HM/lab%20711cosx.png?raw=true)
 3.	y = tan(x)
+    ![](https://github.com/est160/LAB-07/blob/master/HM/lab%20712tanx.png?raw=true)
 ```
 	
